@@ -1,0 +1,22 @@
+{
+  "app": {
+    "title": "Kaito Music",
+    "headerTitle": "KaitoMusic",
+    "headerColor": "#17171f",
+    "textColor": "white",
+    "textAlign": "left",
+    "statusBarColor": "#17171f",
+    "leftButton": "none",
+    "statusBar": "normal",
+    "actionBarHidden": false,
+    "hideAndroidBottomNavigationBar": false,
+    "hideIOSSafeAreaBottom": false,
+    "selfControlLoading": false
+  },
+  "debug": false,
+  "pages": [],
+  "listCSS": [],
+  "listSyncJS": [],
+  "listAsyncJS": [],
+  "template": {}
+}
