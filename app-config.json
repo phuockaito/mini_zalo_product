@@ -8,8 +8,8 @@
     "statusBarColor": "#17171f",
     "leftButton": "none",
     "statusBar": "normal",
-    "actionBarHidden": false,
-    "hideAndroidBottomNavigationBar": false,
+    "actionBarHidden": true,
+    "hideAndroidBottomNavigationBar": true,
     "hideIOSSafeAreaBottom": false,
     "selfControlLoading": false
   },

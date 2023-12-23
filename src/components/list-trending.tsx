@@ -35,7 +35,7 @@ export const ListTrending = () => {
             {articles.map((item, index) =>
                 <div
                     key={item._id}
-                    className="flex items-center gap-4"
+                    className="flex items-center gap-4 w-full flex-1"
                 >
                     <p
                         className="text-white font-semibold text-2xl"
