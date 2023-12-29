@@ -1,15 +1,15 @@
 {
   "app": {
-    "title": "Kaito Music",
-    "headerTitle": "Kaito Music",
+    "title": "Kaitou Music",
+    "headerTitle": "Kaitou Music",
     "headerColor": "#17171f",
     "textColor": "white",
     "textAlign": "left",
     "statusBarColor": "#17171f",
     "leftButton": "none",
     "statusBar": "normal",
-    "actionBarHidden": true,
-    "hideAndroidBottomNavigationBar": true,
+    "actionBarHidden": false,
+    "hideAndroidBottomNavigationBar": false,
     "hideIOSSafeAreaBottom": false,
     "selfControlLoading": false
   },

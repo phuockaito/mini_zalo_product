@@ -6,51 +6,51 @@ import clsx from 'clsx';
 
 
 interface WrapperPagePrpos {
-    children?: React.ReactNode;
-    goBack?: boolean;
-    pageTitle?: string;
-    onClickGoBack?: any,
-    IconClose?: any,
-    classNameTitle?: string
+  children?: React.ReactNode;
+  goBack?: boolean;
+  pageTitle?: string;
+  onClickGoBack?: any,
+  IconClose?: any,
+  classNameTitle?: string
 }
 
 export const WrapperPage = ({
-    children,
-    goBack,
-    pageTitle,
-    onClickGoBack,
-    IconClose = FaAngleLeft,
-    classNameTitle
+  children,
+  goBack,
+  pageTitle,
+  onClickGoBack,
+  IconClose = FaAngleLeft,
+  classNameTitle
 }: WrapperPagePrpos) => {
-    const navigate = useNavigate();
+  const navigate = useNavigate();
 
-    return (
-        <Page className="bg-[#17171f] relative p-4">
-            {
-                goBack &&
-                <div className={clsx("flex items-center", classNameTitle)}>
-                    <div
-                        onClick={() => {
-                            if (onClickGoBack) {
-                                onClickGoBack()
-                            } else {
-                                navigate(-1)
-                            }
-                        }}
-                    >
-                        <IconClose color="#ffff" size={20} />
-                    </div>
-                    <div
-                        className="flex items-center justify-center w-full"
-                    >
-                        <p
-                            className="text-white relative right-2 text-lg">
-                            {pageTitle}
-                        </p>
-                    </div>
-                </div>
-            }
-            {children}
-        </Page>
-    )
+  return (
+    <Page className="bg-[#17171f] relative px-4 pt-4 pb-28">
+      {
+        goBack &&
+        <div className={clsx("flex items-center", classNameTitle)}>
+          <div
+            onClick={() => {
+              if (onClickGoBack) {
+                onClickGoBack()
+              } else {
+                navigate(-1)
+              }
+            }}
+          >
+            <IconClose color="#ffff" size={20} />
+          </div>
+          <div
+            className="flex items-center justify-center w-full"
+          >
+            <p
+              className="text-white relative right-2 text-lg">
+              {pageTitle}
+            </p>
+          </div>
+        </div>
+      }
+      {children}
+    </Page>
+  )
 }

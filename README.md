@@ -1,4 +1,4 @@
-# KaitoMusic
+# Kaitou Music
 
 ## ZMP CLI Options
 
@@ -6,8 +6,8 @@ ZMP app created with following options:
 
 ```
 {
-  "cwd": "/Users/phuochuu/Downloads/kaitomusic",
-  "name": "KaitoMusic",
+  "cwd": "/Users/phuochuu/Downloads/kaitou-music",
+  "name": "Kaitou Music",
   "framework": "react-typescript",
   "cssPreProcessor": "css",
   "includeTailwind": true,
