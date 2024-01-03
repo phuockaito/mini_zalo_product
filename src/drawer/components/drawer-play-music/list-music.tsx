@@ -27,7 +27,7 @@ export const ListMusic = ({
         data,
         fetchNextPage,
         status,
-    }: any = useInfiniteQuery({
+    } = useInfiniteQuery({
         queryKey: ['fetchCategorysMusic', category],
         queryFn: async ({ pageParam }) => {
             const response = await apiMusic.getCategory(pageParam);
@@ -62,7 +62,7 @@ export const ListMusic = ({
                 <div className="flex items-center justify-between bg-[#17171f] w-full top-0 py-4 sticky z-50 px-4">
                     <FaAngleLeft onClick={() => setOpenList(false)} color="#ffff" size={20} />
                     <p
-                        className="text-white relative text-lg right-6"
+                        className="relative text-lg text-white right-6"
                     >
                         Danh sách gợi ý
                     </p>
@@ -81,10 +81,10 @@ export const ListMusic = ({
                         next={fetchNextPage}
                         hasMore={data.pages[0].pagination._total !== articles.length}
                         loader={
-                            <h4 className="text-white text-center mt-4 block mx-auto">Loading...</h4>
+                            <h4 className="block mx-auto mt-4 text-center text-white">Loading...</h4>
                         }
                         height={700}
-                        className="hidden-scroll px-4 pb-4"
+                        className="px-4 pb-4 hidden-scroll"
                     >
                         <div
                             className="flex flex-col gap-4"
@@ -114,10 +114,10 @@ export const ListMusic = ({
                                                 className="object-cover w-full h-full rounded-lg"
                                             />
                                         </div>
-                                        <div className="flex justify-between w-full flex-1 overflow-hidden gap-4">
+                                        <div className="flex justify-between flex-1 w-full gap-4 overflow-hidden">
                                             <div className="flex flex-col overflow-hidden">
-                                                <p className="text-lg font-bold text-white truncate overflow-hidden">{item.name_music}</p>
-                                                <p className="text-base text-white truncate overflow-hidden">{item.name_singer}</p>
+                                                <p className="overflow-hidden text-lg font-bold text-white truncate">{item.name_music}</p>
+                                                <p className="overflow-hidden text-base text-white truncate">{item.name_singer}</p>
                                             </div>
                                             <p className="text-base text-white">{item.time_format}</p>
                                         </div>
